@@ -1,4 +1,3 @@
-<!-- src/components/HelloWorld.vue -->
 <template>
   <h1>{{ msg }}</h1>
   <p>{{ description }}</p>
@@ -14,11 +13,9 @@ interface Props {
 
 const props = defineProps<Props>();
 
-// Mistake 1: Incorrect default prop value type (should be string, not boolean)
-props.description = true; // ❌ Incorrect
+props.description = true;
 
-// Mistake 2: Unused import
-import { ref } from 'vue'; // ❌ Unused import
+import { ref } from 'vue'; 
 </script>
 
 <style scoped>
